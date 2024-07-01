@@ -16,19 +16,29 @@ server.post('/videos', (request, reply) => {
         duration,
     })
     
-    
+   //console.log(database.list()) 
 
     return reply.status(201).send();
 });
 
 server.get('/videos', (request, reply) => {
     const videos = database.list()
+    console.log(videos)
 
     return videos
 });
 
-server.put('/videos/:id', () => {
-    return `Updating video with ID: ${id}`
+server.put('/videos/:id', (request, reply) => {
+    const videoId = request.params.id
+    const { title, description, duration } = request.body;
+
+    database.update(videoId, {
+        title,
+        description,
+        duration,
+    })
+
+    return reply.status(204).send()
 });
 
 server.delete('/videos/:id', () => {
