@@ -1,0 +1,7 @@
+- backend - nodejs
+- npm
+npm run dev
+- postgres - banco de dados verdadeiramente opensource
+- framework - fastify
+npm install fastify
+instalar o rest client
