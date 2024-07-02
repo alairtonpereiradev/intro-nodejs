@@ -5,7 +5,8 @@ import { DatabasePostgres } from "./database-postgres.js";
 const server = fastify();
 
 // const database = new DatabaseMemory();
-    const database = new DatabasePostgres();
+const database = new DatabasePostgres();
+
 
 server.post('/videos', async (request, reply) => {
     const { title, description, duration } = request.body   
@@ -52,7 +53,8 @@ server.delete('/videos/:id', async (request, reply) => {
     return reply.status(204).send()
 });
 
+const port = process.env.PORT || 3333
 server.listen({
     //port: 3333,
-    port: Process.env.PORT ?? 3333,
+    port
 })
