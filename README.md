@@ -22,3 +22,15 @@ npm install -g neonctl
 
 neonctl auth
 
+# realizar deploy
+
+criar conta gratuita no render
+https://render.com
+
+1. Cadastrar com o a conta do github para o render identficar o projeto
+2. Configure a mesma região do banco de dados neon para evitar latência
+3. Escolha o comando *npm install* para instalação 
+4. E para execução o comando *npm run star* 
+
+5. Configure as variaveis de ambientes, essas variaveis estão no neon data base.
+
