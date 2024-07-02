@@ -8,7 +8,7 @@ const server = fastify();
     const database = new DatabasePostgres();
 
 server.post('/videos', async (request, reply) => {
-    const { title, description, duration } = request.body;   
+    const { title, description, duration } = request.body   
 
 
     await database.create({
@@ -20,7 +20,7 @@ server.post('/videos', async (request, reply) => {
    // console.log(database.create()) 
 
     return reply.status(201).send();
-});
+})
 
 server.get('/videos', async (request, reply) => {
     const search = request.query.search

@@ -23,17 +23,17 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3333/videos/5a22d711-be75-4f5e-b20e-0c2a9a180388
+PUT http://localhost:3333/videos/b23eee0c-7261-4475-8ef1-60cfd1f088d8
 Content-Type: application/json
 
 {
 
-    "title": "Video 02",
-    "description": "Este é o Video 02",
+    "title": "Video node 02",
+    "description": "Este é o Video node 02",
     "duration": 190
 
 }
 
 ###
 
-DELETE http://localhost:3333/videos/30ff5ce-c042-4b95-99e6-e4cd84a51777
+DELETE http://localhost:3333/videos/23eee0c-7261-4475-8ef1-60cfd1f088d8
