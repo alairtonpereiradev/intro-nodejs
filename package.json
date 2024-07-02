@@ -13,6 +13,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "fastify": "^4.28.0"
+    "commonjs": "^0.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.0",
+    "postgres": "^3.4.4"
   }
 }
